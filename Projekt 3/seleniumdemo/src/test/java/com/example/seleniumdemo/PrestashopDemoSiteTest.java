@@ -97,13 +97,13 @@ public class PrestashopDemoSiteTest {
         
         @Test
         public void selectorTest(){
-        driver.get("http://demo.presta.shop.pl/");
-        
-        element = driver.findElement(By.xpath("/html/body/div/div[2]/div[1]/div[2]/div/form/p/select"));
-        element.sendKeys("Shure Incorporated");
-        
-        element = driver.findElement(By.xpath("/html/body/div/div[2]/div[2]/ul/li/div[1]/h3/a"));
-        assertNotNull(element);
+            driver.get("http://demo.presta.shop.pl/");
+
+            element = driver.findElement(By.xpath("/html/body/div/div[2]/div[1]/div[2]/div/form/p/select"));
+            element.sendKeys("Shure Incorporated");
+
+            element = driver.findElement(By.xpath("/html/body/div/div[2]/div[2]/ul/li/div[1]/h3/a"));
+            assertNotNull(element);
         }
         
         @Test
