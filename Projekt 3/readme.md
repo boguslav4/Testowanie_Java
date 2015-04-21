@@ -7,3 +7,7 @@ Projekt 3 - ćwiczenia 8
 B. Czł. 
 215522
 
+
+Netbean wersja 8.0.2 
+Selenium Chrome WebDriver
+
