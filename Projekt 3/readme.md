@@ -7,6 +7,7 @@ Projekt 3 - ćwiczenia 8
 B. Czł. 
 215522
 
+## IDE i biblioteki
 
 Netbean wersja 8.0.2 
 Selenium Chrome WebDriver
