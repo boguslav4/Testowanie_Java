@@ -1,0 +1,59 @@
+
+(com/example/seleniumdemo/web_test.story)
+Scenario: Looking for link
+Given you are on the homepage
+When you are looking for link
+Then link Notebooki is found
+
+Scenario: Testing page look
+Given you are on the notebooki
+When you are making screenshot (FAILED)
+(java.lang.ClassCastException: seleniumdemo.pages.Notebooki cannot be cast to org.openqa.selenium.TakesScreenshot)
+Then screenshoot will be taken (NOT PERFORMED)
+
+Scenario: Image loading test
+Given you are on the homepage
+When you are waiting for image to load
+Then image will be loaded (PENDING)
+@Then("image will be loaded")
+@Pending
+public void thenImageWillBeLoaded() {
+  // PENDING
+}
+
+
+Scenario: Selector work as planned
+Given you are on the homepage
+When you click on checkbox (PENDING)
+Then you are on next page (PENDING)
+@When("you click on checkbox")
+@Pending
+public void whenYouClickOnCheckbox() {
+  // PENDING
+}
+
+@Then("you are on next page")
+@Pending
+public void thenYouAreOnNextPage() {
+  // PENDING
+}
+
+
+Scenario: Font-size is proper
+Given you are on the homepage
+When you take css value (PENDING)
+Then you check if proper (PENDING)
+@When("you take css value")
+@Pending
+public void whenYouTakeCssValue() {
+  // PENDING
+}
+
+@Then("you check if proper")
+@Pending
+public void thenYouCheckIfProper() {
+  // PENDING
+}
+
+
+

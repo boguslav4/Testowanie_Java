@@ -1,0 +1,94 @@
+<html>
+<head>
+<title>com.example.seleniumdemo.web_test</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+ 
+<script type="syntaxhighlighter" class="brush: txt"><![CDATA[
+
+(com/example/seleniumdemo/web_test.story)
+Scenario: Looking for link
+Given you are on the homepage
+When you are looking for link
+Then link Notebooki is found
+
+Scenario: Testing page look
+Given you are on the notebooki
+When you are making screenshot (FAILED)
+(java.lang.ClassCastException: seleniumdemo.pages.Notebooki cannot be cast to org.openqa.selenium.TakesScreenshot)
+Then screenshoot will be taken (NOT PERFORMED)
+
+Scenario: Image loading test
+Given you are on the homepage
+When you are waiting for image to load
+Then image will be loaded (PENDING)
+@Then("image will be loaded")
+@Pending
+public void thenImageWillBeLoaded() {
+  // PENDING
+}
+
+
+Scenario: Selector work as planned
+Given you are on the homepage
+When you click on checkbox (PENDING)
+Then you are on next page (PENDING)
+@When("you click on checkbox")
+@Pending
+public void whenYouClickOnCheckbox() {
+  // PENDING
+}
+
+@Then("you are on next page")
+@Pending
+public void thenYouAreOnNextPage() {
+  // PENDING
+}
+
+
+Scenario: Font-size is proper
+Given you are on the homepage
+When you take css value (PENDING)
+Then you check if proper (PENDING)
+@When("you take css value")
+@Pending
+public void whenYouTakeCssValue() {
+  // PENDING
+}
+
+@Then("you check if proper")
+@Pending
+public void thenYouCheckIfProper() {
+  // PENDING
+}
+
+
+
+
+]]></script>
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

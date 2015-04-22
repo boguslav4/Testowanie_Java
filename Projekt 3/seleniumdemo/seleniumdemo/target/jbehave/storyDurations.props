@@ -1,0 +1,4 @@
+#org.jbehave.core.embedder.StoryManager
+#Wed Apr 22 17:29:48 CEST 2015
+com/example/seleniumdemo/web_test.story=24000
+total=24000
