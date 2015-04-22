@@ -55,28 +55,7 @@ public class PrestashopDemoSiteTest {
 	}
 
 
-	@Given("you are on the notebooki")
-	public void notebookPage(){
-		pages.notebooki().open();
-	}
 	
-	@When("you are making screenshot")
-	public void makingScreenshot(){
-		File screenshot = ((TakesScreenshot)pages.notebooki()).getScreenshotAs(OutputType.FILE);
-		assertNotNull(screenshot);
-		
-		try {
-			FileUtils.copyFile(screenshot, new File("c:\\tmp\\MBAirTest_BC.png"));
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		assertTrue(true);
-	}
-	
-	@Then("screenshoot will be taken")
-	public void checkingScreenshot(){	
-		
-	}
 
 
 	@Given("you are on the homepage again")

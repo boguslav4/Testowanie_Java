@@ -16,10 +16,27 @@ When you are looking for link
 Then link Notebooki is found
 
 Scenario: Testing page look
-Given you are on the notebooki
-When you are making screenshot (FAILED)
-(java.lang.ClassCastException: seleniumdemo.pages.Notebooki cannot be cast to org.openqa.selenium.TakesScreenshot)
-Then screenshoot will be taken (NOT PERFORMED)
+Given you are on the notebooki (PENDING)
+When you are making screenshot (PENDING)
+Then screenshoot will be taken (PENDING)
+@Given("you are on the notebooki")
+@Pending
+public void givenYouAreOnTheNotebooki() {
+  // PENDING
+}
+
+@When("you are making screenshot")
+@Pending
+public void whenYouAreMakingScreenshot() {
+  // PENDING
+}
+
+@Then("screenshoot will be taken")
+@Pending
+public void thenScreenshootWillBeTaken() {
+  // PENDING
+}
+
 
 Scenario: Image loading test
 Given you are on the homepage
